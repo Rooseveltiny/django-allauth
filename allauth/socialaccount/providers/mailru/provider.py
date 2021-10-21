@@ -29,7 +29,7 @@ class MailRuProvider(OAuth2Provider):
     account_class = MailRuAccount
 
     def extract_uid(self, data):
-        return data["uid"]
+        return data["id"]
 
     def extract_common_fields(self, data):
         return dict(
